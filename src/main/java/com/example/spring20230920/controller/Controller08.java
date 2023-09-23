@@ -22,4 +22,13 @@ public class Controller08 {
         model.addAttribute("propTWO", "🙄");
 
     }
+
+    @RequestMapping("sub3")
+    public void method3(Model model){
+        // view name : /main8/sub3
+        // WEB-INF/jsp/main8/sub3.jsp
+        model.addAttribute("myName","jaySung");
+        model.addAttribute("yourAddress","인천");
+        model.addAttribute("herEmail","jaySung@naver.com");
+    }
 }

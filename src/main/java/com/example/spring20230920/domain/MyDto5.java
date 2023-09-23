@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @NoArgsConstructor
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @AllArgsConstructor
 public class MyDto5 {
     private String name;
