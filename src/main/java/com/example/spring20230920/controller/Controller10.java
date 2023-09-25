@@ -66,4 +66,29 @@ public class Controller10 {
         list.add(new MyDto9("33L","bad","rld","greecy","7567"));
         model.addAttribute("tableList",list);
     }
+    @RequestMapping("sub7")
+    public void method7(Model model){
+        model.addAttribute("a", 3);
+        model.addAttribute("b", 5);
+
+        // el에서 문자열에 산술 연산 시 정수형으로 자동 형변환됨.
+        model.addAttribute("c", "8");
+        model.addAttribute("d", "9");
+
+    }
+    @RequestMapping("sub8")
+    public void method8(Model model) {
+        model.addAttribute("a", 3);
+        model.addAttribute("b", 5);
+
+        model.addAttribute("c", "java");
+        model.addAttribute("d", "spring");
+
+        model.addAttribute("e", "11");
+        model.addAttribute("f", "2");
+        model.addAttribute("g", 2);
+        // ${e > f} : false
+        // ${e > g} : true
+
+    }
 }
