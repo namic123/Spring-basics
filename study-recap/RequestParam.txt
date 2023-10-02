@@ -1,0 +1,34 @@
+@RequestParam
+
+*특징
+ - 쿼리 스트링에 대해 특정 키 값을 원하는 경우, 컨트롤러 매핑의 파라미터 영역에 이  어노테이션을 사용
+- 1개 이상 선언 가능
+- 어노테이션 인자에 쿼리 스트링의 '키'를 지정하면, 매개변수에 키에 해당하는 '값'이 할당됨.
+
+example
+@RequestMapping("sub3")
+public void method(@RequestParam("name") String name){
+System.out.println("name = " + name);
+}
+
+-------------------------------------------------------------------------------------------------\
+
+@RequestParam의 required 옵션
+
+-required는 쿼리 스트링의 '값'을 필수적 할당 여부를 설정하는 옵션
+-  required는 기본 값이 true이므로, 해당 쿼리에는 필수적으로 할당이 되어야함.
+-선택적으로 할당을 원하는 경우 required를 false로 지정
+
+@RequestParam의  default value 옵션
+- 이 옵션은 RequestParam이 지정하는 키에 대해 요청되는 값이 없는 경우, 기본 값을 할당해준다.
+-즉, 값이 할당되지 않아도 기본 값이 있기 때문에 클라이언트가 필수적으로 값을 입력할 필요가 없다.
+
+
+
+*참고*
+- @RequestParam 선언부는 컴파일러에 의해 추론 가능하므로, 람다식처럼 추론 가능한 부분은 생략이 가능하다
+
+*참고
+- @RequestParam선언부가 아닌 RequestMapping에 옵션을 설정하는 것도 가능
+
+-params 옵션에 지정된 리퀘스트 파라미터는 requerd를 선택적으로 할당할 수 있다. 즉, 값을 선택적으로 할당이 가능

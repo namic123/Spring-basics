@@ -1,0 +1,20 @@
+query string
+
+*특징
+- 웹 요청 URL의 일부, 웹 서버로 데이터를 전달하기 위한 목적으로 사용되는 문자열
+- 일반적으로 URL 끝에 물음표(?) 뒤에 나오는 문자열로 구성
+- 주로 키와 값 쌍으로 이루어져 있으며, 이를 request parameter라고도 말함.
+
+*데이터 전송 흐름
+- 클라이언트 요청 -> 디스패치 서블릿에서 URL을 분석하여 매핑된 컨트롤러에 전달 -> 컨트롤러 메서드가 request parameter를 파라미터로 받아 처리
+
+
+예시 : search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=무빙
+
+1. 웹페이지의 주소(ip, 도메인) -  'search.naver.com'
+
+2. 컨트롤러 매핑 경로 - '/search.naver /'
+
+3. ? - Query String의 시작을 나타내는 구분자
+
+4. 쿼리 스트링(키와 값, 쌍으로 이루어짐) - 'where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=무빙'
