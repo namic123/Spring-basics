@@ -16,9 +16,9 @@ public class Controller18 {
     // get / main18/ sub1
     @GetMapping("sub1")
     public void method1(Model model) throws Exception {
-        String url = "jdbc:mariadb://localhost:3306/w3schools";
-        String username = "root";
-        String password = "1234";
+        String url = "";
+        String username = "";
+        String password = "";
 
         String sql = """
                         SELECT customerName
