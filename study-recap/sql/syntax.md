@@ -117,7 +117,9 @@ SELECT * FROM employees
 WHERE LastName LIKE '_e%';  -- 두 번째 글자가 e인 문자열(여기서는 아무글자 뒤에 2번째가 e만 붙으면됨.(두글자 x))
 
 ```
+------------------------------------------------------
 
+# DML
 
 ## INSERT INTO
 * 테이블에 데이터를 추가
@@ -130,4 +132,37 @@ INSERT INTO employees
 
 INSERT INTO employees(EmployeeID,LastName,FirstName)
 VALUE (13, '박','지성'); 
+
+
+
 ```
+
+## DELETE
+
+## UPDATE
+* 컬럼의 레코드(데이터를)를 수정
+* WHERE절이 포함되지 않으면 실행되지 않음.
+```sql
+-- 예) 1Q번 고객의 이름 수정하기
+UPDATE customers
+SET CustomerName = '박재성'
+WHERE CustomerID = 1;
+
+SELECT * FROM customers;
+-- 예) 5번 직원이 NOTES 변경
+UPDATE employees
+SET Notes = '블라블라'
+WHERE EmployeeID = 5;
+SELECT * FROM employees;
+
+
+-- 예) 1번 공급자의 전화번호, 주소 변경
+UPDATE suppliers
+SET Phone = 01012312345,
+    Address = '인천'
+WHERE SupplierID = 1;
+SELECT * FROM suppliers;
+```
+
+--------------------------------------------------------
+# NULL
