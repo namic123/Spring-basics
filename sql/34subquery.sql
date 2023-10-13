@@ -18,7 +18,7 @@ SELECT
         AS `Number Of Customers`
 FROM suppliers s;
 
--- 예) 각 직원보다 나이가 많은 직원의 수
+-- 예) 각 직원보다 나이가 많은 직원의 수는?
 SELECT * FROM employees;
 
 SELECT LastName,(SELECT COUNT(*)
