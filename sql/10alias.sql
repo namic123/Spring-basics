@@ -12,4 +12,6 @@ SELECT SupplierName AS `공급자 이름`, CONCAT(Address, City, Country) AS 주
 
 -- 테이블명에 별칭(Alias)를 주기
 SELECT p.ProductName, c.CategoryID
-FROM products AS p JOIN categories AS c ON p.CategoryID = c.CategoryID
+FROM products AS p JOIN categories AS c ON p.CategoryID = c.CategoryID;
+
+SELECT p.ProductName FROM products p;

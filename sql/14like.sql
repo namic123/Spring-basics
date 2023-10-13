@@ -21,7 +21,7 @@ WHERE CustomerName LIKE '%er%';  -- 중간에 er이 있는 0개이상 문자
 
 -- _ 기호
 SELECT * FROM employees
-WHERE FirstName LIKE '_____';   -- _: 언더스크어 갯수만큼의 글자 (여기서 5개)
+WHERE FirstName LIKE '_____';   -- _: 언더스코어 갯수만큼의 글자 (여기서 5개)
 
 SELECT * FROM employees
 WHERE LastName LIKE '____';   -- _: 4개의 문자 아무거나

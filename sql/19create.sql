@@ -1,4 +1,5 @@
 -- DATABASE 또는 SCHEME (예: w3schools) : 테이블들이 있는 공간
+
 -- DATABASE 만들기
 CREATE DATABASE mydb1;
 CREATE SCHEMA mydb2;

@@ -25,6 +25,8 @@ SELECT * FROM my_table1;
 INSERT INTO my_table1(col_name1, col_name2, col_name3)
     VALUE('김민재','손흥민','이강인');
 
+DROP TABLE my_table1;
+
 -- 예) my_table2 만들기, 컬럼은 4개, 모든 컬럼타입은 varchar(10)
 
 CREATE TABLE my_table2(
