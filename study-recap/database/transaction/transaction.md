@@ -39,16 +39,3 @@
 3. 롤백(ROLLBACK) : 하나 이상의 작업이 실패한 경우, 이전 상태로 DB를 복원
 4. 커밋(COMMIT): 모든 작업이 성공적으로 완료되었을 때 DB에 변경사항을 영구적으로 저장
 
-
-* *참고* transaction. 특별한일 없으면 runtimeException에서 롤백됨. Checked 에서는 롤백 안됨
-* checked에서 롤백을 원하면 명시적으로 작성해야함. 
-```java
-@Transactional(rollbackFor = Exception.class)
-```
-
-같은 클래스 내에서 transactional 메서드를 생성하고 같은 클래스에서 호출할 경우
-프록시가 생성되지 않음.
-
-클래스 레벨에 Transactional을 명시할 경우, 모든 메서드가 적용됨.
-
-Service 만들 때 Transactional 을 명시할 것
