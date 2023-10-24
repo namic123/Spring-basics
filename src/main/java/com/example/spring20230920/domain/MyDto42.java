@@ -1,0 +1,15 @@
+package com.example.spring20230920.domain;
+
+import lombok.Data;
+
+import java.util.*;
+
+@Data
+public class MyDto42 {
+private String city;
+private Integer age;
+private Boolean married;
+private String car;
+private Map<String, Object> home;
+private List<String> foods;
+     }
