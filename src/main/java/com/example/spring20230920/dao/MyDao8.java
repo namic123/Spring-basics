@@ -29,6 +29,7 @@ public interface MyDao8 {
 """)
     MyDto33Employee selectByEmployeeId(Integer id);
 
+    // id를 쿼리스트링 등으로 입력 받아서 상품의 id, price category unit을 반환
     @Select("""
     SELECT ProductID id, Price, CategoryName category, unit
     FROM w3schools.products p JOIN w3schools.categories c
