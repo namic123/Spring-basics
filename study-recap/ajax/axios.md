@@ -158,11 +158,30 @@
               .then(function (param){  // 직전 함수의 리턴 값이 파라미터로 들어옴
                 console.log("두번째 함수")
                 console.log(param)  // hello world
-                return 1234;
-              })  // promise 객체를 반환
-              .then(function (param){ // 직전 함수의 리턴 값이 파라미터로 들어옴
-                console.log(param) // 1234
               })
+    }
+  </script>
+</div>
+
+<!-- then 메서드, arrow function 활용 -->
+<div>
+  <button onclick="ajax9()">button9</button>
+  <script>
+    function ajax9(){
+      axios.get("/main38/sub2")
+              .then(response =>  response.data) // arrow function, 리턴 키워드 생략 가능, 파라미터 1개이므로 괄호 생략 가능
+              .then(data=> console.log(data))
+    }
+  </script>
+</div>
+
+<div>
+  <button onclick="ajax10()">button10</button>
+  <script>
+    function ajax10(){
+      axios.get("/main38/sub4")
+              .then(response => response.data)
+              .then(data => console.log(data.list[1]))    // lee
     }
   </script>
 </div>
