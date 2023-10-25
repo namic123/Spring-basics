@@ -89,5 +89,83 @@
         }
     </script>
 </div>
+<div>
+    <button onclick="ajax6()">button6</button>
+    <script>
+        function ajax6(){
+            axios.get("/main38/sub2")
+                .then(function (){
+                    console.log("응답 완료 후 실행");
+                })  // promise 객체를 반환
+                .then(function (){  // 반환된 promise 객체를 통해 연속적으로 추가작업을 수행할 수 있음.
+                    console.log("그 다음 실행");
+                })  // promise 객체를 반환
+                .then(function (){
+                    console.log("또, 그 다음 실행");
+                })
+        }
+    </script>
+</div>
+<div>
+    <button onclick="ajax7()">button7</button>
+    <script>
+        function ajax7(){
+            axios.get("/main38/sub2")
+                .then(function (){
+                    console.log("첫 함수")
+                    return "abcd";
+                })  // promise 객체를 반환
+                .then(function (param){  // 직전 함수의 리턴 값이 파라미터로 들어옴
+                    console.log("두번째 함수")
+                    console.log(param)  // "abcd"
+                    return 1234;
+                })  // promise 객체를 반환
+                .then(function (param){
+                    console.log(param) // 1234
+                })
+
+        }
+    </script>
+</div>
+<div>
+    <button onclick="ajax8()">button8</button>
+    <script>
+        function ajax8(){
+            axios.get("/main38/sub2")
+                .then(function (response){  // 서버의 응답 값이 파라미터로 들어옴
+                    console.log("첫번째 함수")
+                    return response.data;   // hello world
+                })  // promise 객체를 반환
+                .then(function (param){  // 직전 함수의 리턴 값이 파라미터로 들어옴
+                    console.log("두번째 함수")
+                    console.log(param)  // hello world
+                    return 1234;
+                })  // promise 객체를 반환
+                .then(function (param){ // 직전 함수의 리턴 값이 파라미터로 들어옴
+                    console.log(param) // 1234
+                })
+        }
+    </script>
+</div>
+<div>
+    <button onclick="ajax9()">button9</button>
+    <script>
+        function ajax9(){
+            axios.get("/main38/sub2")
+                .then(response =>  response.data) // arrow function, 리턴 키워드 생략 가능, 파라미터 1개이므로 괄호 생략 가능
+                .then(data=> console.log(data))
+        }
+    </script>
+</div>
+<div>
+    <button onclick="ajax10()">button10</button>
+    <script>
+        function ajax10(){
+            axios.get("/main38/sub4")
+                .then(response => response.data)
+                .then(data => console.log(data.list[1]))    // lee
+        }
+    </script>
+</div>
 </body>
 </html>
