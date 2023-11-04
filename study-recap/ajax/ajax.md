@@ -14,7 +14,7 @@
     
   * ### 2. ajax jQeury
     * jQuery 라이브러리를 사용한 HTTP 요청 방법
-    * XMLHttpRequestqhek rksrufgkrh rkehrtjd whgdms zhemfmf aksemf tn dlTdma. 
+    * XMLHttpRequest 보다 간결하고 가독성 좋은 코드를 만들 수 있음
 
   * ### 3. Fetch API
     *  모던 브라우저에서 제공하는 내장 API

@@ -1,6 +1,6 @@
 # Axios
 * #### Axios는 JavaScript에서 HTTP 요청을 할 때 사용되는 라이브러리이다.
-* AJAX를 더 쉽고 편리하게 사용할 수 있도록 만든 라이브러리
+* AJAX를 더 쉽고 편리하게 사용할 수 있도록 만든 javaScript 라이브러리
 * Promise 기반: 비동기 HTTP요청을 쉽게 처리할 수 있음.
 * 취소 토큰: 진행 중인 요청을 취소할 수 있음.
 * 자동 형변환 : JSON 데이터를 자동으로 JavaScript 객체로 변환해줌.
