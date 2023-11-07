@@ -2,6 +2,7 @@ package com.example.spring20230920.controller;
 
 import com.example.spring20230920.dao.MyDao10;
 import com.example.spring20230920.dao.MyDao9;
+import com.example.spring20230920.domain.MyDto34Customer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,5 +29,10 @@ public class RestController1 {
     public String method2(){
        String name = dao.customerName5();
         return name;
+    }
+    @GetMapping("sub3")
+    @ResponseBody
+        public MyDto34Customer method3(){
+        return dao.getCustomer();
     }
 }
