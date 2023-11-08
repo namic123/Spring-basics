@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("api/main1")
@@ -52,4 +54,9 @@ public class RestController1 {
         return ResponseEntity.ok(employee);
     }
 
+    @GetMapping("sub6")
+    @ResponseBody
+    public List<Integer> method6(){
+       return dao.getEmployeeIdList();
+    }
 }
