@@ -1,6 +1,6 @@
-# Spring MVC basics
+# Spring MVC basics for study
 # Spring-boot
-* ### Controller
+* ### Controller 
   * #### WebRequest
   * #### HttpSession
   * #### ServletContext
@@ -37,6 +37,8 @@
 
 
 * ### DI(Dependency Injection)
+ * #### Configuration
+ * #### Component  
  * #### Autowired
 
 
@@ -49,7 +51,7 @@
 * ### Maria DB
 * ### SQL
 * ### myBatis (DAO)
- * #### 
+ * #### Mapper
 
 
 # Lombok
