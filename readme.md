@@ -43,88 +43,88 @@
    * REST API  구현 시 사용되며, 예외 처리 및 다양한 http 상태코드를 반환할 필요가 있을 경우 사용 
  
 * ## Model
- * 비즈니스 로직 및 데이터를 포함 
- * 데이터 처리와 관련된 로직을 캡슐화
+   * 비즈니스 로직 및 데이터를 포함 
+   * 데이터 처리와 관련된 로직을 캡슐화
  
 * ## View
- * 사용자에게 보여지는 인터페이스
- * HTML, JSP, Thymeleaf등의 템플릿 엔진 
- * ### jsp
+   * 사용자에게 보여지는 인터페이스
+   * HTML, JSP, Thymeleaf등의 템플릿 엔진 
+   * ### jsp
 
 * ## Service
- * 비즈니스 로직을 처리하는 서비스 계층 클래스
- * 즉, 비즈니스 규칙과 데이터 처리 로직을 포함하여, DB와 상호작용을 추상화함.
- * 컨트롤러와 모델 사이에서 중간 역할을 하며, 주로 Controller에서 전달된 요청을 처리하여 model에 전달
- * ### @Service
-  * 이 어노테이션으로 표시된 클래스는 Spring 컨테이너에 의해 관리
-  * 비즈니스 로직, 트랜잭션 관리를 담당
- * ### @Transactional
-  * 해당 영역의 작업을 하나의 트랜잭션으로 묶는 역할을함.
-  * DB 작업의 일관성, 무결성 보장과 오류 발생 시 자동 롤백 지원 
+   * 비즈니스 로직을 처리하는 서비스 계층 클래스
+   * 즉, 비즈니스 규칙과 데이터 처리 로직을 포함하여, DB와 상호작용을 추상화함.
+   * 컨트롤러와 모델 사이에서 중간 역할을 하며, 주로 Controller에서 전달된 요청을 처리하여 model에 전달
+   * ### @Service
+      * 이 어노테이션으로 표시된 클래스는 Spring 컨테이너에 의해 관리
+      * 비즈니스 로직, 트랜잭션 관리를 담당
+   * ### @Transactional
+      * 해당 영역의 작업을 하나의 트랜잭션으로 묶는 역할을함.
+      * DB 작업의 일관성, 무결성 보장과 오류 발생 시 자동 롤백 지원 
 
 
 * ## DTO(Data Transfer Object)
- * 데이터 전송을 위해 사용되는 객체
- * 여러 계층(예: 컨트롤러, 서비스, 데이터 액세스 계층) 간 객체의 속성을 통해 데이터를 교환
- * ORM(객체-관계 매핑), DB 레코드와 java 객체 간의 매핑을 지원
+   * 데이터 전송을 위해 사용되는 객체
+   * 여러 계층(예: 컨트롤러, 서비스, 데이터 액세스 계층) 간 객체의 속성을 통해 데이터를 교환
+   * ORM(객체-관계 매핑), DB 레코드와 java 객체 간의 매핑을 지원
 
 --------------------------------------------------------------------------------------------------------------
 # Database
-* ### jdbc
- * #### Connection
- * #### Statement
- * #### ResultSet
- * #### PreparedStatement
-* ### SQL(Maria DB)
- * select
- * where
- * not
- * compare
- * and or
- * between
- * in
- * arithmetic
- * alias
- * orderby
- * limit
- * paging
- * like
- * insert
- * delete
- * update
- * create
- * null
- * data-type
- * table
- * nomalization
- * primary key
- * foriegn key
- * cardinality
- * join
- * subquery
- * union
- * aggregate-function
- * groupby
- * having
- * alter-table
- * transaction
+  * ### jdbc
+   * #### Connection
+   * #### Statement
+   * #### ResultSet
+   * #### PreparedStatement
+  * ### SQL(Maria DB)
+   * select
+   * where
+   * not
+   * compare
+   * and or
+   * between
+   * in
+   * arithmetic
+   * alias
+   * orderby
+   * limit
+   * paging
+   * like
+   * insert
+   * delete
+   * update
+   * create
+   * null
+   * data-type
+   * table
+   * nomalization
+   * primary key
+   * foriegn key
+   * cardinality
+   * join
+   * subquery
+   * union
+   * aggregate-function
+   * groupby
+   * having
+   * alter-table
+   * transaction
 * ### myBatis (DAO)
- * #### @Mapper
- * #### @Options
- * #### @Select
- * #### @Update
- * #### @Insert
- * #### @Delete
+   * #### @Mapper
+   * #### @Options
+   * #### @Select
+   * #### @Update
+   * #### @Insert
+   * #### @Delete
 --------------------------------------------------------------------------------------------------------------
 
 * # AJAX
  * ### Axios
-  * promise
-  * axios.httpMethod()(get, post, delete, put)
-  * .then, .catch, .finally
-  * response 객체
+    * promise
+    * axios.httpMethod()(get, post, delete, put)
+    * .then, .catch, .finally
+    * response 객체
 * ### JSON
- * #### 직렬화, 역직렬화(파싱) 
+   * #### 직렬화, 역직렬화(파싱) 
 --------------------------------------------------------------------------------------------------------------
 * # Lombok
 --------------------------------------------------------------------------------------------------------------
