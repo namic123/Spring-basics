@@ -1,17 +1,18 @@
 # Spring MVC basics
 * ### Controller
   * WebRequest
+  * 
   * RequestMapping
   * GetMapping
   * PostMapping
   * RequestParam
   * 
-* Model
+* ### Model
   * 
-* Service
-* View
+* ### Service
+* ### View
   * jsp
-* DTO
-* Dao(Maria DB)
-* SQL
+* ### DTO
+* ### Dao(Maria DB)
+* ### SQL
 * 
