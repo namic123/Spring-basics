@@ -1,4 +1,17 @@
-# 웹 애플리케이션 기초
-
-## * Spring
-## * 
+# Spring MVC basics
+* Controller
+  * WebRequest
+  * RequestMapping
+  * GetMapping
+  * PostMapping
+  * RequestParam
+  * 
+* Model
+  * 
+* Service
+* View
+  * jsp
+* DTO
+* Dao(Maria DB)
+* SQL
+* 
